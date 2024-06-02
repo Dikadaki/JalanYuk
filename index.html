@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Jalan Yuk</title>
+</head>
+<body class="scroll-smooth">
+    <!--Header Start-->
+    <section>
+        <nav class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div class="relative flex items-center justify-between h-16">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                    <!-- Icon when menu is closed. -->
+                    <!--
+                        Heroicon name: outline/menu
+        
+                        Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <!-- Icon when menu is open. -->
+                    <!--
+                Heroicon name: outline/x
+        
+                    Menu open: "block", Menu closed: "hidden"
+                    -->
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0">
+                    <a href="/" class="text-xl font-bold text-gray-800 hover:text-slate-400">Jalan Yuk</a>
+                </div>
+                    <div class="container hidden sm:block sm:ml-6">
+                    <div class="flex space-x-8 justify-center lg:justify-end">
+                        <a href="#home" class="text-gray-700 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Beranda</a>
+                        <a href="#destinasi" class="text-gray-700 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Destinasi Unggulan</a>
+                        <a href="#tips" class="text-gray-700 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Tips Perjalanan</a>
+                        <a href="#tentang-saya" class="text-gray-700 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Tentang Saya</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        
+            <!-- Mobile menu start -->
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+                <a href="#destinasi" class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Destinasi Unggulan</a>
+                <a href="#tips" class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tips Perjalanan</a>
+                <a href="#tentang-saya" class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tentang Saya</a>
+            </div>
+            </div>
+            </nav>
+        
+        <script>
+            const menuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+            const mobileMenu = document.getElementById('mobile-menu');
+        
+            menuButton.addEventListener('click', () => {
+                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+                menuButton.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+        
+
+    </section>
+    <!--Header End-->
+    <!--hero section start-->
+    <section id="home" class="bg-cover bg-center h-64 text-white" style="background-image: url('src/img/images.jpeg');">
+        <div class="container mx-auto h-full flex items-center">
+            <div>
+                <h1 class="text-4xl font-bold translate-x-3">Selamat Datang di Jalan Yuk</h1>
+                <p class="mt-2 text-center translate-x-3 lg:inline-block">Temukan destinasi menarik dan tips perjalanan terbaik.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto p-4">
+        <!-- Featured Destinations -->
+        <section id="destinasi" class="mb-8">
+            <h2 class="text-2xl font-bold text-blue-600">Destinasi Unggulan</h2>
+                <div class="grid md:grid-cols-3 gap-4 mt-4">
+                    <a href="tempatkopi.html">
+                <div class="bg-white shadow-md rounded-md overflow-hidden">
+                <img src="src/img/Latar1.jpeg" alt="Pantai" class="w-full h-48 object-cover">
+                <div class="p-4">
+                <h3 class="text-xl font-bold">5 Rekomendasi Tempat Buat Bengong di Jakarta</h3>
+                <p class="text-gray-700 mt-2">Buat kamu yang bingung cari tempat buat me time atau hanya sekedar bengong</p>
+            </div>
+            </div>
+            </a>
+            <a href="5_rekomendasi_JPO.html">
+            <div class="bg-white shadow-md rounded-md overflow-hidden">
+                <img src="src/img/Jembatan CSW ASEAN.jpeg" alt="Gunung" class="w-full h-48 object-cover">
+                <div class="p-4">
+                <h3 class="text-xl font-bold">5 Rekomendasi JPO(Jembatan Penyebrangan Orang) yang Instagramable di Jakarta</h3>
+                <p class="text-gray-700 mt-2">Referensi buat kamu yang doyan Street Fotografi</p>
+            </div>
+            </div>
+            </a>
+            <a href="5_Rekomendasi_Curug.html">
+            <div class="bg-white shadow-md rounded-md overflow-hidden">
+                <img src="src/img/curug-cikaso.jpeg" alt="Kota" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                    <h3 class="text-xl font-bold">5 Rekomendasi Curug Indah di Jawa Barat</h3>
+                    <p class="text-gray-700 mt-2">Memberikan Referensi untuk anda Curug Indah yang Ada di Jawa Barat</p>
+            </div>
+            </div>
+            </a>
+            </div>
+        </section>
+    
+        <!-- Travel Tips -->
+        <section id="tips" class="mb-8">
+            <h2 class="text-2xl font-bold text-green-600">Tips Perjalanan</h2>
+            <div class="grid md:grid-cols-2 gap-4 mt-4">
+                <a href="tips_hemat_traveling.html">
+                    <div class="bg-white shadow-md rounded-md p-4">
+                        <h3 class="text-xl font-bold">Tips Hemat Saat Traveling</h3>
+                        <p class="text-gray-700 mt-2">Temukan cara untuk menghemat pengeluaran selama perjalanan Anda.</p>
+                    </div>
+                </a>
+                <a href="packing_cerdas_untuk_liburan.html">
+                    <div class="bg-white shadow-md rounded-md p-4">
+                        <h3 class="text-xl font-bold">Packing Cerdas untuk Liburan</h3>
+                        <p class="text-gray-700 mt-2">Pelajari cara packing yang efisien dan efektif.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    
+        <!-- About Me Section -->
+        <section id="tentang-saya" class="mb-8">
+            <h2 class="text-2xl font-bold text-blue-600">Tentang Saya</h2>
+            <div class="bg-white shadow-md rounded-md p-4">
+            <p class="text-gray-700">Saya adalah seorang pecinta perjalanan yang selalu mencari petualangan baru. Melalui <a href="home" class="text-green-600 font-bold">Jalan Yuk</a> saya ingin berbagi pengalaman,tips dan rekomendasi tentang pertualangan yang pernah saya lalui. Semoga tulisan saya menjadi manfaat bagi para pembaca dan viewers.</p>
+            </div>
+        </section>
+        </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 <a href="home" class="text-green-600">Jalan Yuk</a>. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+    
+    <!--hero section end-->
+    
+</body>
+</html>
